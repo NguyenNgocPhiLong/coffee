@@ -21,9 +21,17 @@ const Login = () => {
     <>
    
       <Card style={{
-        width: '60%',
+   
       }}>
         <div className='text-center'>
+          <img
+            className='mb-3' 
+            src={'https://firebasestorage.googleapis.com/v0/b/coffee-ca334.appspot.com/o/cafe-logo.png?alt=media&token=6452be14-33b4-4987-acd6-b60fcb36f737'} 
+            alt=""
+            style={{
+              width: 90,
+              height: 65,
+            }} />
           <Title level={2}>Log in to your account </Title>
           <Paragraph type='secondary'>
              Welcome back! Please enter your details
