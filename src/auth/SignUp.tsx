@@ -21,9 +21,9 @@ const SignUp = () => {
         width: '60%',
       }}>
         <div className='text-center'>
-          <Title level={2}>Log in to your account </Title>
+          <Title level={2}>Create an account </Title>
           <Paragraph type='secondary'>
-             Welcome back! Please enter your details
+             Free trial 30 days
           </Paragraph>
 
 
@@ -41,10 +41,12 @@ const SignUp = () => {
               rules={[
               {
                 required: true,
-                message: 'Please enter your email !!!',
+                message: 'Please enter your name !!!',
               },
             ]}>
-              <Input allowClear />
+              <Input 
+                placeholder='Enter your name' 
+                allowClear />
             </Form.Item>
             <Form.Item 
               name={'email'} 
@@ -55,7 +57,11 @@ const SignUp = () => {
                 message: 'Please enter your email !!!',
               },
             ]}>
-              <Input allowClear maxLength={100} type='email' />
+              <Input 
+              placeholder='Enter your email' 
+              allowClear 
+              maxLength={100} 
+              type='email' />
             </Form.Item>
             <Form.Item 
               name={'password'} 
@@ -63,10 +69,13 @@ const SignUp = () => {
               rules={[
               {
                 required: true,
-                message: 'Please enter your email !!!',
+                message: 'Please enter your password !!!',
               },
             ]}>
-              <Input.Password  maxLength={100} type='password' />
+              <Input.Password 
+                placeholder='Create password'  
+                maxLength={100} 
+                type='password' />
             </Form.Item>
           </Form>
             <div className='mt-4 mb-3'>
@@ -83,7 +92,7 @@ const SignUp = () => {
             <SocialLogin />
             <div className='mt-4 text-center'>
               <Space>
-                <Text> Already an account?</Text>
+                <Text type='secondary'> Already an account?</Text>
                 <Link to={'/Login'}> Login</Link>
               </Space>
             </div>

@@ -55,7 +55,7 @@ const Login = () => {
               rules={[
               {
                 required: true,
-                message: 'Please enter your email !!!',
+                message: 'Please enter your password !!!',
               },
             ]}>
               <Input.Password  maxLength={100} type='password' />
